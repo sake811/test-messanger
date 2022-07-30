@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.message__inner {
+    box-sizing: border-box;
+    width: 570px;
+    height: 628px;
+    background: #FFFFFF;
+    border: 1px solid rgba(35, 44, 94, 0.21);
+    box-shadow: 0px 6px 25px rgba(19, 35, 68, 0.1);
+    border-radius: 8px;
+    position: relative;
+    padding-bottom: 50px;
+    &-panel {
+        width: 568px;
+        height: 31px;
+        background: #F5F5F8;
+        border-radius: 7px 7px 0px 0px;
+        border-bottom: 1px solid rgba(35, 44, 94, 0.13);
+    }
+
+    &-bottom {
+        width: 570px;
+        height: 125px;
+        background: rgba(11, 17, 69, 0.04);
+        position: absolute;
+        bottom: 0px;
+        border-top: 1px solid rgba(35, 44, 94, 0.13);
+    }
+
+    &-content {
+        max-width: 563px;
+        max-height: 464px;
+        overflow-y: scroll;
+    }
+}
+
+.input__message {
+    box-sizing: border-box;
+    width: 506px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid rgba(35, 44, 94, 0.21);
+    border-radius: 8px;
+    margin-top: 36px;
+    margin-left: 32px;
+    padding-left: 18px;
+    outline: none;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.arrow {
+    position: absolute;
+    left: 502px;
+    top: 52px;
+    cursor: pointer;
+}
+
+.message {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 28px;
+
+    &__dag {
+        position: absolute;
+        left: 372px;
+        top: 53px;
+        cursor: pointer;
+    }
+
+    &__title {
+        width:auto;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #5E5E5E;
+        padding: 0;
+    }
+
+    &__text {
+        width: 300px;
+        height: auto;
+        background: #F5F5F8;
+        border-radius: 8px;
+        margin-top: 6px;
+        padding: 19px 16px;
+    }
+
+    &__time {
+        position: absolute;
+        width: 33px;
+        height: 15px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #969696;
+        bottom: 6px;
+        right: 204px;
+        margin-top: 6px;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
